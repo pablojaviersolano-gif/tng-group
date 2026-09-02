@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TNG GROUP SAS - Insumos para comunicación visual</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e0e3e5",
+                        "on-surface": "#181c1e",
+                        "link-active": "#003F87",
+                        "outline": "#737782",
+                        "inverse-on-surface": "#eef1f3",
+                        "on-tertiary-fixed": "#191c1e",
+                        "primary": "#00336c",
+                        "border-subtle": "#E2E8F0",
+                        "primary-fixed-dim": "#abc7ff",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#c4c7c9",
+                        "outline-variant": "#c2c6d3",
+                        "surface-muted": "#F7F9FB",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#e6e8eb",
+                        "inverse-surface": "#2d3133",
+                        "on-primary-container": "#97bbff",
+                        "tertiary-container": "#484b4d",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface-dim": "#d7dadd",
+                        "on-surface-variant": "#424751",
+                        "secondary-container": "#659dfe",
+                        "primary-container": "#004996",
+                        "tertiary-fixed": "#e0e3e5",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#d7e2ff",
+                        "inverse-primary": "#abc7ff",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#b8bbbd",
+                        "on-secondary-container": "#003370",
+                        "surface": "#f7fafc",
+                        "on-error": "#ffffff",
+                        "tertiary": "#313536",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f1f4f6",
+                        "on-background": "#181c1e",
+                        "on-primary-fixed": "#001b3f",
+                        "surface-container": "#ebeef1",
+                        "secondary": "#115cb9",
+                        "on-secondary-fixed-variant": "#004491",
+                        "on-secondary-fixed": "#001a40",
+                        "secondary-fixed-dim": "#acc7ff",
+                        "surface-bright": "#f7fafc",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#d7e3ff",
+                        "surface-tint": "#265dab",
+                        "background": "#f7fafc",
+                        "on-tertiary-fixed-variant": "#444749",
+                        "on-primary-fixed-variant": "#00458f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "gutter": "16px",
+                        "container-margin": "20px",
+                        "section-padding-mobile": "48px",
+                        "section-padding-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "body-lg": ["Work Sans"],
+                        "body-sm": ["Work Sans"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "label-bold": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "body-md": ["Work Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-bold": ["14px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .custom-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+        .hover-elevate:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary">
+<!-- 1. Header -->
+<header class="bg-surface-container-lowest text-primary font-headline-md border-b border-outline-variant flex justify-between items-center px-container-margin py-2 w-full sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<div class="relative flex items-center justify-center py-1">
+<div class="absolute inset-0 m-auto w-40 h-20 md:w-48 md:h-24 bg-gradient-to-br from-[#2E8FE0] to-[#00336c] rounded-full blur-xl opacity-60"></div>
+<img alt="TNG GROUP SAS" class="relative h-16 md:h-20 w-auto object-contain" src="images/tng-logo.png"/>
+</div>
+</div>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-bold text-primary border-b-2 border-primary pb-1" href="#">Inicio</a>
+<a class="font-label-bold text-on-surface-variant hover:text-primary transition-colors" href="#catalogo">Catálogo</a>
+<a class="font-label-bold text-on-surface-variant hover:text-primary transition-colors" href="#nosotros">Nosotros</a>
+<a class="font-label-bold text-on-surface-variant hover:text-primary transition-colors" href="#beneficios">Beneficios</a>
+<a class="bg-primary-container text-on-primary font-label-bold px-6 py-3 rounded-lg hover:bg-opacity-90 transition-all flex items-center gap-2" href="#contacto">
+<span class="">Contacto</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</nav>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</header>
+<main>
+<!-- 2. Hero Section -->
+<section class="relative min-h-[80vh] flex items-center bg-surface-muted overflow-hidden">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0 opacity-20">
+<div class="bg-cover bg-center w-full h-full" data-alt="A wide angle shot of a modern, highly organized industrial warehouse and logistics center. The scene is brightly lit with cool, white corporate lighting. Stacks of pristine cardboard boxes and rolls of large-format printing paper are visible on towering racks. A forklift is blurred in motion in the background. The aesthetic is clean, precise, and professional, utilizing a palette of crisp whites, subtle grays, and deep navy blue accents to convey reliability and scale." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBeHElOsHbk_3RwVft0nPlNVBJ5S7d6u9RdggG4_-GRWn38euwKSN4bshre-81V2FzvwtAw8myjVGqBMeJaNS_wLF8b4TMKLJbCgGpHVehxJ6ePdSbh3pzsVf8VQkeCesQD2BXeXoiNokl7vFc71c_Rua56t3luwxJxkleIM2TX-Ozfvke-KqLVgr1PvseKrM6EcxMoZOftB-d6IBXRJgNaNsZZtuQdsrlHELNws8RxcX8j15nzYc1u')"></div>
+</div>
+<div class="max-w-7xl mx-auto px-container-margin md:px-section-padding-desktop w-full relative z-10 py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low border border-border-subtle mb-6">
+<span class="font-label-bold text-primary tracking-widest uppercase text-xs">Importadora &amp; Comercializadora</span>
+</div>
+<h1 class="font-display-lg text-on-surface mb-6">
+                        Insumos para comunicación visual, <span class="text-primary-container">de origen a vidriera.</span>
+</h1>
+<p class="font-body-lg text-on-surface-variant mb-10 max-w-2xl">
+                        Importamos desde Estados Unidos y China y distribuimos en toda la República Argentina papel transfer, displays y light box para la industria gráfica y de cartelería.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-primary-container text-on-primary font-label-bold px-8 py-4 rounded-lg hover:bg-opacity-90 transition-all flex justify-center items-center gap-2" href="#contacto">
+<span class="">Solicitar cotización</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="border border-primary-container text-primary-container font-label-bold px-8 py-4 rounded-lg hover:bg-surface-container-low transition-all flex justify-center items-center" href="#catalogo">
+                            Ver productos
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Key Stats -->
+<section class="bg-primary-container text-on-primary py-12">
+<div class="max-w-7xl mx-auto px-container-margin">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-on-primary-container">
+<div class="flex flex-col items-center text-center p-4">
+<span class="font-display-lg font-bold mb-2">2</span>
+<span class="font-label-bold uppercase tracking-widest text-on-primary-container">Orígenes de importación</span>
+<div class="mt-2 text-sm opacity-80 font-body-sm flex items-center gap-1">
+<span class="">USA</span> <span class="material-symbols-outlined text-xs">arrow_forward</span> <span class="">ARG</span> <span class="material-symbols-outlined text-xs">arrow_back</span> <span class="">CHN</span>
+</div>
+</div>
+<div class="flex flex-col items-center text-center p-4">
+<span class="font-display-lg font-bold mb-2">24</span>
+<span class="font-label-bold uppercase tracking-widest text-on-primary-container">Provincias con cobertura</span>
+<span class="mt-2 material-symbols-outlined opacity-80">local_shipping</span>
+</div>
+<div class="flex flex-col items-center text-center p-4">
+<span class="font-display-lg font-bold mb-2">3</span>
+<span class="font-label-bold uppercase tracking-widest text-on-primary-container">Líneas de producto</span>
+<span class="mt-2 material-symbols-outlined opacity-80">inventory_2</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. About Us -->
+<section class="flex flex-col lg:flex-row bg-surface-container-low" id="nosotros">
+<div class="w-full lg:w-1/2 px-container-margin md:px-section-padding-desktop py-section-padding-mobile md:py-section-padding-desktop flex flex-col justify-center">
+<div class="max-w-xl mx-auto lg:mx-0 lg:ml-auto w-full">
+<span class="font-label-bold text-primary tracking-widest uppercase mb-4 block">Quiénes somos</span>
+<h2 class="font-headline-lg text-on-surface mb-6">Una cadena de abastecimiento pensada para tu negocio</h2>
+<div class="space-y-4 font-body-lg text-on-surface-variant">
+<p class="">TNG GROUP SAS es una empresa importadora y comercializadora especializada en insumos para la industria de la comunicación visual. Trabajamos junto a fabricantes en Estados Unidos y China para traer al mercado argentino productos de calidad consistente y disponibilidad constante.</p>
+<p class="">Distribuimos en toda la República Argentina, acompañando a imprentas, casas de cartelería, fabricantes de exhibidores y comercios que necesitan insumos confiables para sus puntos de venta.</p>
+</div>
+<div class="mt-8 flex gap-6">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">map</span>
+</div>
+<div>
+<div class="font-label-bold text-on-surface">AR</div>
+<div class="text-sm text-on-surface-variant">Distribución nacional</div>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">domain</span>
+</div>
+<div>
+<div class="font-label-bold text-on-surface">B2B</div>
+<div class="text-sm text-on-surface-variant">Foco mayorista</div>
+</div>
+</div>
+</div>
+<div class="mt-12 relative rounded-xl overflow-hidden border border-border-subtle bg-surface-container-lowest p-6 shadow-sm border-b-4 border-b-primary">
+<div class="font-label-bold mb-4 text-center border-b border-border-subtle pb-4 text-on-surface">Ruta de abastecimiento</div>
+<div class="flex flex-col gap-6">
+<div class="flex justify-between items-center bg-surface-muted p-4 rounded-lg">
+<div class="text-center">
+<div class="text-xs text-on-surface-variant">Origen</div>
+<div class="font-bold text-primary">USA</div>
+</div>
+<span class="material-symbols-outlined text-outline">flight_takeoff</span>
+<div class="text-center">
+<div class="text-xs text-on-surface-variant">Origen</div>
+<div class="font-bold text-primary">CHINA</div>
+</div>
+</div>
+<div class="flex justify-center">
+<span class="material-symbols-outlined text-outline">arrow_downward</span>
+</div>
+<div class="bg-primary-container text-on-primary p-4 rounded-lg text-center">
+<div class="text-xs opacity-80">Importación</div>
+<div class="font-bold text-lg">TNG GROUP SAS</div>
+</div>
+<div class="flex justify-center">
+<span class="material-symbols-outlined text-outline">arrow_downward</span>
+</div>
+<div class="bg-surface-variant p-4 rounded-lg text-center border border-border-subtle">
+<div class="text-xs text-on-surface-variant">Distribución</div>
+<div class="font-bold text-on-surface">TODO EL PAÍS</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2 min-h-[400px] lg:min-h-full relative">
+<img alt="Warehouse background" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UlMh8fa2eRTAjzA-lrFM43431Q_oHi7aIrYccIabECH2rkCczN8zZZ9klyCX12ckewbk-Oy9rKB8xcG_yWOivCPIc8tGWkOb9mOA8XO5F2oE5Wn-E3fVUGTOvtDaGAWPHT-IoMlKRRyOhW-FgDST_98yHPCCboaHo25HcxTocivNK4PWNgLoWsonEXRwkr0lZOGxR7AqlIECgLJHk_d4n9090i7vzi0gIWU3UVZLgodQzKOZPkAeyQ7js"/>
+</div>
+</section>
+<!-- 5. Catalog -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop bg-surface-muted border-t border-border-subtle" id="catalogo">
+<div class="max-w-7xl mx-auto px-container-margin">
+<div class="mb-12 text-center max-w-2xl mx-auto">
+<span class="font-label-bold text-primary tracking-widest uppercase mb-4 block">Catálogo</span>
+<h2 class="font-headline-lg text-on-surface mb-4">Nuestras líneas de producto</h2>
+<p class="font-body-lg text-on-surface-variant">Tres categorías centrales para equipar puntos de venta y proyectos de cartelería, con stock permanente y reposición continua.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Product 1 -->
+<div class="bg-surface-container-lowest border border-border-subtle border-b-4 border-b-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full hover:-translate-y-1">
+<div class="h-48 bg-surface-variant relative border-b border-border-subtle overflow-hidden" data-carousel>
+<div class="carousel-track flex h-full transition-transform duration-500 ease-out">
+<img alt="Papel transfer aplicado sobre vinilo" class="w-full h-full object-cover flex-shrink-0" src="images/POSICIONADOR_1.jpeg"/>
+<img alt="Aplicación de papel transfer con espátula" class="w-full h-full object-cover flex-shrink-0" src="images/POSICIONADOR_2.jpeg"/>
+</div>
+<div class="absolute top-4 left-4 bg-surface-container-lowest px-3 py-1 rounded-full text-xs font-label-bold text-on-surface shadow-sm">01 / PAPEL</div>
+<button aria-label="Anterior" class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-surface-container-lowest/90 hover:bg-surface-container-lowest w-8 h-8 rounded-full flex items-center justify-center shadow-sm text-on-surface">
+<span class="material-symbols-outlined text-lg">chevron_left</span>
+</button>
+<button aria-label="Siguiente" class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-surface-container-lowest/90 hover:bg-surface-container-lowest w-8 h-8 rounded-full flex items-center justify-center shadow-sm text-on-surface">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+<div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-on-surface mb-3">Papel Transfer</h3>
+<p class="font-body-md text-on-surface-variant mb-6 flex-grow">El papel transfer, también llamado posicionador de papel, es la herramienta que facilita la aplicación de vinilos en cartelería. Actúa como un puente entre el diseño y la superficie final, permitiendo colocar letras, logos o gráficos en el lugar exacto, de forma rápida, limpia y precisa.</p>
+<div class="space-y-3 pt-4 border-t border-border-subtle">
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant">Uso</span>
+<span class="font-semibold text-on-surface">Punto de venta</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant">Disponibilidad</span>
+<span class="font-semibold text-primary">Stock permanente</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-surface-container-lowest border border-border-subtle border-b-4 border-b-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full hover:-translate-y-1">
+<div class="h-48 bg-surface-variant relative border-b border-border-subtle overflow-hidden">
+<img alt="Displays de exhibición para punto de venta" class="w-full h-full object-cover" src="images/DISPLAYS.jpeg"/>
+<div class="absolute top-4 left-4 bg-surface-container-lowest px-3 py-1 rounded-full text-xs font-label-bold text-on-surface shadow-sm">02 / EXHIBICIÓN</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-on-surface mb-3">Displays</h3>
+<p class="font-body-md text-on-surface-variant mb-6 flex-grow">Soportes y estructuras de exhibición para mostrar productos y comunicar promociones en locales comerciales y eventos.</p>
+<div class="space-y-3 pt-4 border-t border-border-subtle">
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant">Uso</span>
+<span class="font-semibold text-on-surface">Exhibición comercial</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant">Disponibilidad</span>
+<span class="font-semibold text-primary">Stock permanente</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-surface-container-lowest border border-border-subtle border-b-4 border-b-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full hover:-translate-y-1">
+<div class="h-48 bg-surface-variant relative border-b border-border-subtle overflow-hidden" data-carousel>
+<div class="carousel-track flex h-full transition-transform duration-500 ease-out">
+<img alt="Light box circular iluminado" class="w-full h-full object-cover flex-shrink-0" src="images/LIGHT_BOX_1.jpeg"/>
+<img alt="Light box con marco LED perimetral" class="w-full h-full object-cover flex-shrink-0" src="images/LIGHT_BOX_2.jpeg"/>
+</div>
+<div class="absolute top-4 left-4 bg-surface-container-lowest px-3 py-1 rounded-full text-xs font-label-bold text-on-surface shadow-sm">03 / ILUMINACIÓN</div>
+<button aria-label="Anterior" class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-surface-container-lowest/90 hover:bg-surface-container-lowest w-8 h-8 rounded-full flex items-center justify-center shadow-sm text-on-surface">
+<span class="material-symbols-outlined text-lg">chevron_left</span>
+</button>
+<button aria-label="Siguiente" class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-surface-container-lowest/90 hover:bg-surface-container-lowest w-8 h-8 rounded-full flex items-center justify-center shadow-sm text-on-surface">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+<div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-on-surface mb-3">Light Box</h3>
+<p class="font-body-md text-on-surface-variant mb-6 flex-grow">Carteles luminosos para cartelería iluminada de fachadas, vidrieras y espacios interiores con alta visibilidad.</p>
+<div class="space-y-3 pt-4 border-t border-border-subtle">
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant">Uso</span>
+<span class="font-semibold text-on-surface">Cartelería iluminada</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant">Disponibilidad</span>
+<span class="font-semibold text-primary">Stock permanente</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Why TNG -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop bg-surface" id="beneficios">
+<div class="max-w-7xl mx-auto px-container-margin">
+<div class="mb-12">
+<span class="font-label-bold text-primary tracking-widest uppercase mb-4 block">Por qué TNG GROUP</span>
+<h2 class="font-headline-lg text-on-surface max-w-3xl">Una operación de importación pensada para el día a día de tu negocio</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Benefit 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-border-subtle border-b-4 border-b-primary shadow-sm hover:shadow-md transition-shadow">
+<div class="text-sm font-label-bold text-primary mb-4">/ 01</div>
+<h4 class="font-headline-md text-on-surface mb-3 text-xl">Importación directa</h4>
+<p class="font-body-md text-on-surface-variant">Trabajamos directo con proveedores en USA y China, sin intermediarios que encarezcan el producto.</p>
+</div>
+<!-- Benefit 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-border-subtle border-b-4 border-b-primary shadow-sm hover:shadow-md transition-shadow">
+<div class="text-sm font-label-bold text-primary mb-4">/ 02</div>
+<h4 class="font-headline-md text-on-surface mb-3 text-xl">Cobertura nacional</h4>
+<p class="font-body-md text-on-surface-variant">Llegamos a comercios e industrias en toda la República Argentina con logística propia y de terceros.</p>
+</div>
+<!-- Benefit 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-border-subtle border-b-4 border-b-primary shadow-sm hover:shadow-md transition-shadow">
+<div class="text-sm font-label-bold text-primary mb-4">/ 03</div>
+<h4 class="font-headline-md text-on-surface mb-3 text-xl">Stock constante</h4>
+<p class="font-body-md text-on-surface-variant">Planificamos la reposición para que tu producción o tu vidriera nunca se quede sin insumos.</p>
+</div>
+<!-- Benefit 4 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-border-subtle border-b-4 border-b-primary shadow-sm hover:shadow-md transition-shadow">
+<div class="text-sm font-label-bold text-primary mb-4">/ 04</div>
+<h4 class="font-headline-md text-on-surface mb-3 text-xl">Atención mayorista</h4>
+<p class="font-body-md text-on-surface-variant">Asesoramiento comercial dedicado a imprentas, distribuidores y fabricantes de cartelería.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Contact -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop bg-surface-muted border-t border-border-subtle" id="contacto">
+<div class="max-w-7xl mx-auto px-container-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
+<!-- Contact Info -->
+<div class="lg:col-span-5">
+<span class="font-label-bold text-primary tracking-widest uppercase mb-4 block">Contacto</span>
+<h2 class="font-headline-lg text-on-surface mb-6">Pedinos tu cotización</h2>
+<p class="font-body-lg text-on-surface-variant mb-10">Contanos qué insumos necesitás y te respondemos con disponibilidad, precios y plazos de entrega.</p>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary flex-shrink-0 border border-border-subtle">
+<span class="material-symbols-outlined text-xl">mail</span>
+</div>
+<div>
+<div class="text-sm text-on-surface-variant font-label-bold mb-1">Email</div>
+<a class="font-body-lg font-semibold hover:text-primary transition-colors break-all" href="mailto:asesorventas.tng@gmail.com">asesorventas.tng@gmail.com</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary flex-shrink-0 border border-border-subtle">
+<span class="material-symbols-outlined text-xl">call</span>
+</div>
+<div>
+<div class="text-sm text-on-surface-variant font-label-bold mb-1">Teléfono / WhatsApp</div>
+<a class="font-body-lg font-semibold hover:text-primary transition-colors" href="#">+54 11 0000-0000</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary flex-shrink-0 border border-border-subtle">
+<span class="material-symbols-outlined text-xl">location_on</span>
+</div>
+<div>
+<div class="text-sm text-on-surface-variant font-label-bold mb-1">Dirección</div>
+<div class="font-body-lg font-semibold">Buenos Aires, Argentina</div>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary flex-shrink-0 border border-border-subtle">
+<span class="material-symbols-outlined text-xl">public</span>
+</div>
+<div>
+<div class="text-sm text-on-surface-variant font-label-bold mb-1">Cobertura</div>
+<div class="font-body-lg font-semibold">República Argentina</div>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary flex-shrink-0 border border-border-subtle">
+<span class="material-symbols-outlined text-xl">schedule</span>
+</div>
+<div>
+<div class="text-sm text-on-surface-variant font-label-bold mb-1">Horario</div>
+<div class="font-body-lg font-semibold">Lun a Vie - 9:00 a 18:00</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 rounded-xl border border-border-subtle custom-shadow">
+<form class="space-y-6" data-netlify="true" id="contact-form" method="POST" name="contacto" netlify-honeypot="bot-field">
+<input name="form-name" type="hidden" value="contacto"/>
+<p class="hidden">
+<label>No completar si sos humano: <input name="bot-field"/></label>
+</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-bold text-on-surface mb-2" for="nombre">Nombre y apellido</label>
+<input class="w-full bg-surface-muted border border-border-subtle rounded-lg px-4 py-3 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors" id="nombre" name="nombre" placeholder="Tu nombre" type="text"/>
+</div>
+<div>
+<label class="block font-label-bold text-on-surface mb-2" for="empresa">Empresa</label>
+<input class="w-full bg-surface-muted border border-border-subtle rounded-lg px-4 py-3 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors" id="empresa" name="empresa" placeholder="Nombre de tu empresa" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-bold text-on-surface mb-2" for="email">Email</label>
+<input class="w-full bg-surface-muted border border-border-subtle rounded-lg px-4 py-3 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors" id="email" name="email" placeholder="tu@email.com" type="email"/>
+</div>
+<div>
+<label class="block font-label-bold text-on-surface mb-2" for="telefono">Teléfono</label>
+<input class="w-full bg-surface-muted border border-border-subtle rounded-lg px-4 py-3 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors" id="telefono" name="telefono" placeholder="+54 11..." type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-bold text-on-surface mb-2" for="producto">Producto de interés</label>
+<select class="w-full bg-surface-muted border border-border-subtle rounded-lg px-4 py-3 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors appearance-none text-on-surface" id="producto" name="producto">
+<option disabled="" selected="" value="">Seleccioná una opción...</option>
+<option value="papel">Papel Transfer</option>
+<option value="displays">Displays</option>
+<option value="lightbox">Light Box</option>
+<option value="varios">Más de uno / no estoy seguro</option>
+</select>
+</div>
+<div>
+<label class="block font-label-bold text-on-surface mb-2" for="mensaje">Mensaje</label>
+<textarea class="w-full bg-surface-muted border border-border-subtle rounded-lg px-4 py-3 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors resize-none" id="mensaje" name="mensaje" placeholder="Detalle de cantidades, dudas o consultas..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary-container text-on-primary font-label-bold px-8 py-4 rounded-lg hover:bg-opacity-90 transition-all text-center" type="submit">
+                                Enviar consulta
+                            </button>
+</form>
+<div class="hidden text-center py-6" id="contact-success">
+<div class="w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-4xl text-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-3">¡Gracias por escribirnos!</h3>
+<p class="font-body-md text-on-surface-variant">Recibimos tu consulta correctamente. Te vamos a contactar a la brevedad con disponibilidad, precios y plazos de entrega.</p>
+</div>
+<p class="hidden text-center py-4 text-error" id="contact-error">Ocurrió un error al enviar tu consulta. Por favor, intentá nuevamente o escribinos a asesorventas.tng@gmail.com.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- 8. Footer -->
+<footer class="bg-inverse-surface text-surface-bright font-body-sm full-width bottom-0 border-t border-on-tertiary-fixed-variant w-full px-container-margin py-section-padding-mobile flex flex-col gap-unit">
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-surface-bright text-2xl" style="font-variation-settings: 'FILL' 1;">package_2</span>
+<span class="font-headline-md text-headline-md text-surface-bright">TNG GROUP SAS</span>
+</div>
+<p class="text-surface-variant opacity-80 max-w-sm">Importadora y comercializadora de insumos para comunicación visual. Stock permanente para abastecer a la industria gráfica en todo el país.</p>
+</div>
+<div>
+<h4 class="font-label-bold mb-4 text-surface-bright uppercase tracking-widest">Navegación</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-surface-variant opacity-80 hover:text-primary-fixed-dim transition-colors" href="#">Inicio</a></li>
+<li class=""><a class="text-surface-variant opacity-80 hover:text-primary-fixed-dim transition-colors" href="#catalogo">Catálogo</a></li>
+<li class=""><a class="text-surface-variant opacity-80 hover:text-primary-fixed-dim transition-colors" href="#nosotros">Nosotros</a></li>
+<li class=""><a class="text-surface-variant opacity-80 hover:text-primary-fixed-dim transition-colors" href="#beneficios">Beneficios</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-bold mb-4 text-surface-bright uppercase tracking-widest">Legal</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-surface-variant opacity-80 hover:text-primary-fixed-dim transition-colors" href="#">Privacidad</a></li>
+<li class=""><a class="text-surface-variant opacity-80 hover:text-primary-fixed-dim transition-colors" href="#">Términos</a></li>
+<li class=""><a class="text-surface-variant opacity-80 hover:text-primary-fixed-dim transition-colors" href="#">Preguntas Frecuentes</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto w-full pt-8 border-t border-on-tertiary-fixed-variant border-opacity-20 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="text-surface-variant opacity-80 text-center md:text-left">
+                © 2026 TNG GROUP SAS. Todos los derechos reservados.
+            </div>
+<div class="flex gap-4">
+<a class="text-surface-variant opacity-80 hover:text-primary-fixed-dim transition-colors flex items-center gap-2" href="https://instagram.com/grupo.tng" target="_blank">
+<span class="material-symbols-outlined text-sm">photo_camera</span>
+<span class="">@grupo.tng</span>
+</a>
+</div>
+</div>
+</footer>
+<script>
+document.querySelectorAll('[data-carousel]').forEach(function(carousel){
+    var track = carousel.querySelector('.carousel-track');
+    var slides = track.querySelectorAll('img');
+    var dotsWrap = carousel.querySelector('.carousel-dots');
+    var index = 0;
+    var total = slides.length;
+
+    for (var i = 0; i < total; i++){
+        var dot = document.createElement('span');
+        dot.className = 'w-1.5 h-1.5 rounded-full ' + (i === 0 ? 'bg-surface-container-lowest' : 'bg-surface-container-lowest/50');
+        dot.dataset.index = i;
+        dotsWrap.appendChild(dot);
+    }
+    var dots = dotsWrap.querySelectorAll('span');
+
+    function update(){
+        track.style.transform = 'translateX(-' + (index * 100) + '%)';
+        dots.forEach(function(d, i){
+            d.className = 'w-1.5 h-1.5 rounded-full ' + (i === index ? 'bg-surface-container-lowest' : 'bg-surface-container-lowest/50');
+        });
+    }
+
+    carousel.querySelector('.carousel-prev').addEventListener('click', function(){
+        index = (index - 1 + total) % total;
+        update();
+    });
+    carousel.querySelector('.carousel-next').addEventListener('click', function(){
+        index = (index + 1) % total;
+        update();
+    });
+    dots.forEach(function(d){
+        d.addEventListener('click', function(){
+            index = parseInt(d.dataset.index);
+            update();
+        });
+    });
+});
+
+// Envío del formulario de contacto por AJAX a Netlify Forms, sin recargar ni redirigir de página.
+var contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e){
+        e.preventDefault();
+        var submitBtn = contactForm.querySelector('button[type="submit"]');
+        var originalText = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Enviando...';
+
+        var formData = new FormData(contactForm);
+        var params = new URLSearchParams();
+        formData.forEach(function(value, key){ params.append(key, value); });
+
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: params.toString()
+        })
+        .then(function(response){
+            if (response.ok) {
+                contactForm.classList.add('hidden');
+                document.getElementById('contact-success').classList.remove('hidden');
+            } else {
+                throw new Error('Respuesta no exitosa');
+            }
+        })
+        .catch(function(){
+            document.getElementById('contact-error').classList.remove('hidden');
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText;
+        });
+    });
+}
+</script>
+</body></html>
