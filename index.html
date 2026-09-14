@@ -10,111 +10,8 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind CSS -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface-variant": "#e0e3e5",
-                        "on-surface": "#181c1e",
-                        "link-active": "#003F87",
-                        "outline": "#737782",
-                        "inverse-on-surface": "#eef1f3",
-                        "on-tertiary-fixed": "#191c1e",
-                        "primary": "#00336c",
-                        "border-subtle": "#E2E8F0",
-                        "primary-fixed-dim": "#abc7ff",
-                        "error-container": "#ffdad6",
-                        "tertiary-fixed-dim": "#c4c7c9",
-                        "outline-variant": "#c2c6d3",
-                        "surface-muted": "#F7F9FB",
-                        "on-tertiary": "#ffffff",
-                        "surface-container-high": "#e6e8eb",
-                        "inverse-surface": "#2d3133",
-                        "on-primary-container": "#97bbff",
-                        "tertiary-container": "#484b4d",
-                        "on-primary": "#ffffff",
-                        "surface-container-highest": "#e0e3e5",
-                        "surface-dim": "#d7dadd",
-                        "on-surface-variant": "#424751",
-                        "secondary-container": "#659dfe",
-                        "primary-container": "#004996",
-                        "tertiary-fixed": "#e0e3e5",
-                        "error": "#ba1a1a",
-                        "secondary-fixed": "#d7e2ff",
-                        "inverse-primary": "#abc7ff",
-                        "on-secondary": "#ffffff",
-                        "on-tertiary-container": "#b8bbbd",
-                        "on-secondary-container": "#003370",
-                        "surface": "#f7fafc",
-                        "on-error": "#ffffff",
-                        "tertiary": "#313536",
-                        "surface-container-lowest": "#ffffff",
-                        "surface-container-low": "#f1f4f6",
-                        "on-background": "#181c1e",
-                        "on-primary-fixed": "#001b3f",
-                        "surface-container": "#ebeef1",
-                        "secondary": "#115cb9",
-                        "on-secondary-fixed-variant": "#004491",
-                        "on-secondary-fixed": "#001a40",
-                        "secondary-fixed-dim": "#acc7ff",
-                        "surface-bright": "#f7fafc",
-                        "on-error-container": "#93000a",
-                        "primary-fixed": "#d7e3ff",
-                        "surface-tint": "#265dab",
-                        "background": "#f7fafc",
-                        "on-tertiary-fixed-variant": "#444749",
-                        "on-primary-fixed-variant": "#00458f"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "unit": "8px",
-                        "gutter": "16px",
-                        "container-margin": "20px",
-                        "section-padding-mobile": "48px",
-                        "section-padding-desktop": "80px"
-                    },
-                    "fontFamily": {
-                        "headline-lg-mobile": ["Hanken Grotesk"],
-                        "body-lg": ["Work Sans"],
-                        "body-sm": ["Work Sans"],
-                        "display-lg": ["Hanken Grotesk"],
-                        "headline-md": ["Hanken Grotesk"],
-                        "label-bold": ["Hanken Grotesk"],
-                        "headline-lg": ["Hanken Grotesk"],
-                        "body-md": ["Work Sans"]
-                    },
-                    "fontSize": {
-                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
-                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
-                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
-                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
-                        "label-bold": ["14px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" }],
-                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
-                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
-                    }
-                },
-            },
-        }
-    </script>
-<style>
-        .custom-shadow {
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-        }
-        .hover-elevate:hover {
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            transform: translateY(-2px);
-        }
-    </style>
+<!-- Estilos (compilados, sin dependencia de CDN en tiempo de ejecución) -->
+<link href="css/styles.css" rel="stylesheet"/>
 </head>
 <body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary">
 <!-- 1. Header -->
@@ -144,18 +41,19 @@
 <!-- 2. Hero Section -->
 <section class="relative min-h-[80vh] flex items-center bg-surface-muted overflow-hidden">
 <!-- Background Image -->
-<div class="absolute inset-0 z-0 opacity-20">
-<div class="bg-cover bg-center w-full h-full" data-alt="A wide angle shot of a modern, highly organized industrial warehouse and logistics center. The scene is brightly lit with cool, white corporate lighting. Stacks of pristine cardboard boxes and rolls of large-format printing paper are visible on towering racks. A forklift is blurred in motion in the background. The aesthetic is clean, precise, and professional, utilizing a palette of crisp whites, subtle grays, and deep navy blue accents to convey reliability and scale." style="background-image: url('images/warehouse-bg.svg')"></div>
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full" data-alt="Vista panorámica de un depósito logístico moderno y organizado, con estanterías cargadas de mercadería y un montacargas en movimiento, en tonos azules y fríos." style="background-image: url('images/warehouse-hero.jpg')"></div>
+<div class="absolute inset-0" style="background-image: linear-gradient(90deg, rgba(10,30,60,0.85) 0%, rgba(10,30,60,0.65) 55%, rgba(10,30,60,0.5) 100%)"></div>
 </div>
 <div class="max-w-7xl mx-auto px-container-margin md:px-section-padding-desktop w-full relative z-10 py-section-padding-mobile md:py-section-padding-desktop">
 <div class="max-w-3xl">
 <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low border border-border-subtle mb-6">
 <span class="font-label-bold text-primary tracking-widest uppercase text-xs">Importadora &amp; Comercializadora</span>
 </div>
-<h1 class="font-display-lg text-on-surface mb-6">
-                        Insumos para comunicación visual, <span class="text-primary-container">de origen a vidriera.</span>
+<h1 class="text-[32px] md:text-[44px] font-bold leading-[1.15] text-white mb-6">
+                        Insumos para comunicación visual, <span class="text-[#BFD3EE] font-bold">de origen a vidriera.</span>
 </h1>
-<p class="font-body-lg text-on-surface-variant mb-10 max-w-2xl">
+<p class="font-body-lg text-gray-100 mb-10 max-w-2xl">
                         Importamos desde Estados Unidos y China y distribuimos en toda la República Argentina papel transfer, displays y light box para la industria gráfica y de cartelería.
                     </p>
 <div class="flex flex-col sm:flex-row gap-4">
@@ -163,7 +61,7 @@
 <span class="">Solicitar cotización</span>
 <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
-<a class="border border-primary-container text-primary-container font-label-bold px-8 py-4 rounded-lg hover:bg-surface-container-low transition-all flex justify-center items-center" href="#catalogo">
+<a class="border-[1.5px] border-white text-white font-label-bold px-8 py-4 rounded-lg bg-transparent hover:bg-white hover:text-primary-container transition-all flex justify-center items-center" href="#catalogo">
                             Ver productos
                         </a>
 </div>
@@ -173,30 +71,30 @@
 <!-- 3. Key Stats -->
 <section class="bg-primary-container text-on-primary py-12">
 <div class="max-w-7xl mx-auto px-container-margin">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-on-primary-container">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-white/20">
 <div class="flex flex-col items-center text-center p-4">
-<span class="font-display-lg font-bold mb-2">2</span>
-<span class="font-label-bold uppercase tracking-widest text-on-primary-container">Orígenes de importación</span>
-<div class="mt-2 text-sm opacity-80 font-body-sm flex items-center gap-1">
+<span class="text-[32px] font-bold text-white mb-2">2</span>
+<span class="text-[13px] font-semibold uppercase tracking-[0.05em] text-[#BFD3EE]">Orígenes de importación</span>
+<div class="mt-2 min-h-[20px] text-[13px] font-normal text-[#8FB3E0] flex items-center gap-1">
 <span class="">USA</span> <span class="material-symbols-outlined text-xs">arrow_forward</span> <span class="">ARG</span> <span class="material-symbols-outlined text-xs">arrow_back</span> <span class="">CHN</span>
 </div>
 </div>
 <div class="flex flex-col items-center text-center p-4">
-<span class="font-display-lg font-bold mb-2">24</span>
-<span class="font-label-bold uppercase tracking-widest text-on-primary-container">Provincias con cobertura</span>
-<span class="mt-2 material-symbols-outlined opacity-80">local_shipping</span>
+<span class="text-[32px] font-bold text-white mb-2">24</span>
+<span class="text-[13px] font-semibold uppercase tracking-[0.05em] text-[#BFD3EE]">Provincias con cobertura</span>
+<div class="mt-2 min-h-[20px] text-[13px] font-normal text-[#8FB3E0] flex items-center gap-1">Cobertura federal</div>
 </div>
 <div class="flex flex-col items-center text-center p-4">
-<span class="font-display-lg font-bold mb-2">3</span>
-<span class="font-label-bold uppercase tracking-widest text-on-primary-container">Líneas de producto</span>
-<span class="mt-2 material-symbols-outlined opacity-80">inventory_2</span>
+<span class="text-[32px] font-bold text-white mb-2">3</span>
+<span class="text-[13px] font-semibold uppercase tracking-[0.05em] text-[#BFD3EE]">Líneas de producto</span>
+<div class="mt-2 min-h-[20px] text-[13px] font-normal text-[#8FB3E0] flex items-center gap-1">Papel · Displays · Light Box</div>
 </div>
 </div>
 </div>
 </section>
 <!-- 4. About Us -->
-<section class="flex flex-col lg:flex-row bg-surface-container-low" id="nosotros">
-<div class="w-full lg:w-1/2 px-container-margin md:px-section-padding-desktop py-section-padding-mobile md:py-section-padding-desktop flex flex-col justify-center">
+<section class="grid grid-cols-1 lg:grid-cols-2 bg-surface-container-low" id="nosotros">
+<div class="px-container-margin md:px-section-padding-desktop py-section-padding-mobile md:py-section-padding-desktop flex flex-col justify-center">
 <div class="max-w-xl mx-auto lg:mx-0 lg:ml-auto w-full">
 <span class="font-label-bold text-primary tracking-widest uppercase mb-4 block">Quiénes somos</span>
 <h2 class="font-headline-lg text-on-surface mb-6">Una cadena de abastecimiento pensada para tu negocio</h2>
@@ -255,8 +153,9 @@
 </div>
 </div>
 </div>
-<div class="w-full lg:w-1/2 min-h-[400px] lg:min-h-full relative">
-<img alt="Warehouse background" class="absolute inset-0 w-full h-full object-cover" src="images/warehouse-bg.svg"/>
+</div>
+<div class="min-h-[400px]">
+<img alt="Depósito logístico de TNG GROUP SAS" class="w-full h-full object-cover block" src="images/warehouse-hero.jpg"/>
 </div>
 </section>
 <!-- 5. Catalog -->
@@ -272,8 +171,8 @@
 <div class="bg-surface-container-lowest border border-border-subtle border-b-4 border-b-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full hover:-translate-y-1">
 <div class="h-48 bg-surface-variant relative border-b border-border-subtle overflow-hidden" data-carousel>
 <div class="carousel-track flex h-full transition-transform duration-500 ease-out">
-<img alt="Papel transfer aplicado sobre vinilo" class="w-full h-full object-cover flex-shrink-0" src="images/POSICIONADOR_1.jpeg"/>
-<img alt="Aplicación de papel transfer con espátula" class="w-full h-full object-cover flex-shrink-0" src="images/POSICIONADOR_2.jpeg"/>
+<img alt="Papel transfer aplicado sobre vinilo" class="w-full h-full object-cover flex-shrink-0" src="images/posicionador_1.jpeg"/>
+<img alt="Aplicación de papel transfer con espátula" class="w-full h-full object-cover flex-shrink-0" src="images/posicionador_2.jpeg"/>
 </div>
 <div class="absolute top-4 left-4 bg-surface-container-lowest px-3 py-1 rounded-full text-xs font-label-bold text-on-surface shadow-sm">01 / PAPEL</div>
 <button aria-label="Anterior" class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-surface-container-lowest/90 hover:bg-surface-container-lowest w-8 h-8 rounded-full flex items-center justify-center shadow-sm text-on-surface">
@@ -302,7 +201,7 @@
 <!-- Product 2 -->
 <div class="bg-surface-container-lowest border border-border-subtle border-b-4 border-b-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full hover:-translate-y-1">
 <div class="h-48 bg-surface-variant relative border-b border-border-subtle overflow-hidden">
-<img alt="Displays de exhibición para punto de venta" class="w-full h-full object-cover" src="images/DISPLAYS.jpeg"/>
+<img alt="Displays de exhibición para punto de venta" class="w-full h-full object-cover" src="images/displays.jpeg"/>
 <div class="absolute top-4 left-4 bg-surface-container-lowest px-3 py-1 rounded-full text-xs font-label-bold text-on-surface shadow-sm">02 / EXHIBICIÓN</div>
 </div>
 <div class="p-6 flex-grow flex flex-col">
@@ -324,8 +223,8 @@
 <div class="bg-surface-container-lowest border border-border-subtle border-b-4 border-b-primary rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full hover:-translate-y-1">
 <div class="h-48 bg-surface-variant relative border-b border-border-subtle overflow-hidden" data-carousel>
 <div class="carousel-track flex h-full transition-transform duration-500 ease-out">
-<img alt="Light box circular iluminado" class="w-full h-full object-cover flex-shrink-0" src="images/LIGHT_BOX_1.jpeg"/>
-<img alt="Light box con marco LED perimetral" class="w-full h-full object-cover flex-shrink-0" src="images/LIGHT_BOX_2.jpeg"/>
+<img alt="Light box circular iluminado" class="w-full h-full object-cover flex-shrink-0" src="images/light_box_1.jpeg"/>
+<img alt="Light box con marco LED perimetral" class="w-full h-full object-cover flex-shrink-0" src="images/light_box_2.jpeg"/>
 </div>
 <div class="absolute top-4 left-4 bg-surface-container-lowest px-3 py-1 rounded-full text-xs font-label-bold text-on-surface shadow-sm">03 / ILUMINACIÓN</div>
 <button aria-label="Anterior" class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-surface-container-lowest/90 hover:bg-surface-container-lowest w-8 h-8 rounded-full flex items-center justify-center shadow-sm text-on-surface">
@@ -358,7 +257,7 @@
 <div class="max-w-7xl mx-auto px-container-margin">
 <div class="mb-12">
 <span class="font-label-bold text-primary tracking-widest uppercase mb-4 block">Por qué TNG GROUP</span>
-<h2 class="font-headline-lg text-on-surface max-w-3xl">Una operación de importación pensada para el día a día de tu negocio</sh2>
+<h2 class="font-headline-lg text-on-surface max-w-3xl">Una operación de importación pensada para el día a día de tu negocio</h2>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 <!-- Benefit 1 -->
@@ -446,21 +345,21 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div>
 <label class="block font-label-bold text-on-surface mb-2" for="nombre">Nombre y apellido</label>
-<input class="w-full bg-surface-muted border border-border-subtle rounded-lg px-4 py-3 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors" id="nombre" name="nombre" placeholder="Tu nombre" type="text"/>
+<input class="w-full bg-surface-muted border border-border-subtle rounded-lg px-4 py-3 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors placeholder-gray-400" id="nombre" name="nombre" placeholder="Tu nombre" type="text"/>
 </div>
 <div>
 <label class="block font-label-bold text-on-surface mb-2" for="empresa">Empresa</label>
-<input class="w-full bg-surface-muted border border-border-subtle rounded-lg px-4 py-3 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors" id="empresa" name="empresa" placeholder="Nombre de tu empresa" type="text"/>
+<input class="w-full bg-surface-muted border border-border-subtle rounded-lg px-4 py-3 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors placeholder-gray-400" id="empresa" name="empresa" placeholder="Nombre de tu empresa" type="text"/>
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div>
 <label class="block font-label-bold text-on-surface mb-2" for="email">Email</label>
-<input class="w-full bg-surface-muted border border-border-subtle rounded-lg px-4 py-3 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors" id="email" name="email" placeholder="tu@email.com" type="email"/>
+<input class="w-full bg-surface-muted border border-border-subtle rounded-lg px-4 py-3 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors placeholder-gray-400" id="email" name="email" placeholder="tu@email.com" type="email"/>
 </div>
 <div>
 <label class="block font-label-bold text-on-surface mb-2" for="telefono">Teléfono</label>
-<input class="w-full bg-surface-muted border border-border-subtle rounded-lg px-4 py-3 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors" id="telefono" name="telefono" placeholder="+54 11..." type="tel"/>
+<input class="w-full bg-surface-muted border border-border-subtle rounded-lg px-4 py-3 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors placeholder-gray-400" id="telefono" name="telefono" placeholder="+54 11..." type="tel"/>
 </div>
 </div>
 <div>
@@ -475,11 +374,13 @@
 </div>
 <div>
 <label class="block font-label-bold text-on-surface mb-2" for="mensaje">Mensaje</label>
-<textarea class="w-full bg-surface-muted border border-border-subtle rounded-lg px-4 py-3 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors resize-none" id="mensaje" name="mensaje" placeholder="Detalle de cantidades, dudas o consultas..." rows="4"></textarea>
+<textarea class="w-full bg-surface-muted border border-border-subtle rounded-lg px-4 py-3 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors resize-none placeholder-gray-400" id="mensaje" name="mensaje" placeholder="Detalle de cantidades, dudas o consultas..." rows="4"></textarea>
 </div>
-<button class="w-full bg-primary-container text-on-primary font-label-bold px-8 py-4 rounded-lg hover:bg-opacity-90 transition-all text-center" type="submit">
-                                Enviar consulta
-                            </button>
+<button class="w-full bg-primary-container text-on-primary font-label-bold px-8 py-4 rounded-lg hover:bg-opacity-90 transition-all flex justify-center items-center gap-2" type="submit">
+<span class="">Enviar consulta</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<p class="text-[13px] font-medium text-gray-500 text-center mt-2">Respondemos en menos de 24 hs hábiles.</p>
 </form>
 <div class="hidden text-center py-6" id="contact-success">
 <div class="w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center mx-auto mb-6">
@@ -494,6 +395,15 @@
 </section>
 </main>
 <!-- 8. Footer -->
+<div class="bg-gray-800 w-full px-container-margin py-10">
+<div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+<p class="text-white text-lg font-semibold">¿Necesitás cotizar un pedido? Hablemos por WhatsApp.</p>
+<a class="bg-primary-container text-on-primary font-label-bold px-8 py-4 rounded-lg hover:bg-opacity-90 transition-all flex justify-center items-center gap-2 whitespace-nowrap" href="https://wa.me/5491100000000" target="_blank">
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path><path d="M12.01 2C6.485 2 2 6.486 2 12.01c0 1.99.582 3.845 1.588 5.408L2 22l4.694-1.554A9.955 9.955 0 0 0 12.01 22c5.524 0 10.01-4.486 10.01-10.01C22.02 6.486 17.534 2 12.01 2zm0 18.169a8.14 8.14 0 0 1-4.15-1.135l-.298-.177-3.09 1.02 1.032-3.008-.194-.309a8.13 8.13 0 0 1-1.247-4.35c0-4.5 3.66-8.16 8.16-8.16 4.5 0 8.16 3.66 8.16 8.16 0 4.5-3.66 8.16-8.16 8.16z"></path></svg>
+<span class="">Escribir por WhatsApp</span>
+</a>
+</div>
+</div>
 <footer class="bg-inverse-surface text-surface-bright font-body-sm full-width bottom-0 border-t border-on-tertiary-fixed-variant w-full px-container-margin py-section-padding-mobile flex flex-col gap-unit">
 <div class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-12">
 <div class="col-span-1 md:col-span-2">
@@ -578,9 +488,9 @@ if (contactForm) {
     contactForm.addEventListener('submit', function(e){
         e.preventDefault();
         var submitBtn = contactForm.querySelector('button[type="submit"]');
-        var originalText = submitBtn.textContent;
+        var originalHTML = submitBtn.innerHTML;
         submitBtn.disabled = true;
-        submitBtn.textContent = 'Enviando...';
+        submitBtn.innerHTML = '<span>Enviando...</span>';
 
         var formData = new FormData(contactForm);
         var params = new URLSearchParams();
@@ -602,7 +512,7 @@ if (contactForm) {
         .catch(function(){
             document.getElementById('contact-error').classList.remove('hidden');
             submitBtn.disabled = false;
-            submitBtn.textContent = originalText;
+            submitBtn.innerHTML = originalHTML;
         });
     });
 }
